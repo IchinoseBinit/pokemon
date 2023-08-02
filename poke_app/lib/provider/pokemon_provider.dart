@@ -1,13 +1,12 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:poke_app/constants/hive_constants.dart';
-import '/model/pokemon.dart';
 
+import '/constants/hive_constants.dart';
+import '/model/pokemon.dart';
 import '/utils/dio_client.dart';
 
 final pokemonProvider =

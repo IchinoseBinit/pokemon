@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:poke_app/constants/color.dart';
+import '/constants/color.dart';
 
 import '/model/pokemon.dart';
 import '/utils/navigate.dart';
