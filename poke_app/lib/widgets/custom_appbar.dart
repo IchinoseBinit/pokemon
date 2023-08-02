@@ -44,7 +44,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       systemOverlayStyle: Platform.isIOS
           ? SystemUiOverlayStyle.light
           : const SystemUiOverlayStyle(
-              systemNavigationBarColor: const Color(0xffFAFAFA),
+              systemNavigationBarColor: kPrimaryColor,
               statusBarColor: kPrimaryColor,
               systemNavigationBarIconBrightness: Brightness.light,
               statusBarIconBrightness: Brightness.light,

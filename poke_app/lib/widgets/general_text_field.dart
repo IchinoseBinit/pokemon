@@ -30,7 +30,7 @@ class GeneralTextFieldState extends State<GeneralTextField> {
     return TextFormField(
       textInputAction: TextInputAction.search,
       keyboardType: widget.keywordType,
-      onChanged: (v) => widget.onChanged!(v),
+      onChanged: (v) => widget.onChanged(v),
       style: TextStyle(fontSize: 12.sp),
       decoration: InputDecoration(
         counter: const SizedBox.shrink(),
