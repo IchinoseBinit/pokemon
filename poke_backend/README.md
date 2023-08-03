@@ -1,12 +1,6 @@
 # poke_backend
 
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![License: MIT][license_badge]][license_link]
-[![Powered by Dart Frog](https://img.shields.io/endpoint?url=https://tinyurl.com/dartfrog-badge)](https://dartfrog.vgv.dev)
+Welcome to the backend of the PokeApp! The backend uses GraphQL to fetch the list of Pokemon with their id, name and types. The backend also adds the image field to the response and returns it to the application. 
 
-An example application built with dart_frog
-
-[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license_link]: https://opensource.org/licenses/MIT
-[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
-[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
+- Url for PokeApi: https://pokeapi.co
+- GraphQL URL: https://beta.pokeapi.co/graphql/v1beta
