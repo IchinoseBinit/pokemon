@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '/constants/color.dart';
 
 class GeneralTextField extends StatefulWidget {
@@ -23,7 +24,6 @@ class GeneralTextField extends StatefulWidget {
 }
 
 class GeneralTextFieldState extends State<GeneralTextField> {
-  String text = "";
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +31,7 @@ class GeneralTextFieldState extends State<GeneralTextField> {
       textInputAction: TextInputAction.search,
       keyboardType: widget.keywordType,
       onChanged: (v) => widget.onChanged(v),
+      cursorHeight: 12.sp,
       style: TextStyle(fontSize: 12.sp),
       decoration: InputDecoration(
         counter: const SizedBox.shrink(),
@@ -87,8 +88,8 @@ class GeneralTextFieldState extends State<GeneralTextField> {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6.r),
           borderSide: BorderSide(
-            width: text.isNotEmpty ? 1 : 0.6.w,
-            color: text.isNotEmpty ? kPrimaryColor : Colors.grey,
+            width:  0.6.w,
+            color:  Colors.grey,
           ),
         ),
         disabledBorder: OutlineInputBorder(
