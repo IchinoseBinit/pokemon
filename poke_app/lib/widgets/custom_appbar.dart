@@ -1,9 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '/constants/color.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -41,15 +39,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      systemOverlayStyle: Platform.isIOS
-          ? SystemUiOverlayStyle.light
-          : const SystemUiOverlayStyle(
-              systemNavigationBarColor: kPrimaryColor,
-              statusBarColor: kPrimaryColor,
-              systemNavigationBarIconBrightness: Brightness.light,
-              statusBarIconBrightness: Brightness.light,
-              statusBarBrightness: Brightness.light,
-            ),
       toolbarHeight: toolbarHeight,
       automaticallyImplyLeading: automaticallyImplyLeading,
       leading: disableLeading
